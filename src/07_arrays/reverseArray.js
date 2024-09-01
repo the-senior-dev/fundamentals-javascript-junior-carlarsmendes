@@ -6,7 +6,13 @@
  * @returns {Array}
  */
 function reverseArray(arr) {
-    // Your code here
+    let newArr = [];
+    for (let i = arr.length - 1; i >= 0; i--) {
+        newArr.push(arr[i]);
+    }
+    return newArr;
 }
+
+reverseArray([1,2,3]);
 
 module.exports = reverseArray;
